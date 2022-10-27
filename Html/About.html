@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/Bootstrap/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/Bootstrap/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+  <title>First Class Interiors</title>
+  <script>
+
+    function changeImage() {
+      var img = document.getElementById("CEO_DES");
+      img.src = "/Images/E2.jpeg";
+      return false;
+    }
+
+  </script>
+  <script>
+    var button1 = document.getElementById('button1');
+    button1.style.visibility = "hidden";
+    function changeMD() {
+      /* Find all the elements*/
+      var CEO_heading = document.getElementById('CEO_HD');
+      var CEO_des = document.getElementById('CEO_DES');
+      var CEO_img = document.getElementById('CEOimg');
+      var CEO_btn = document.getElementById('CEO_BTN');
+      if (CEO_heading.textContent == "CEO Mrs Carroll Calhoun") {
+        CEO_heading.innerHTML = "MD Miss Myra McBride";
+        CEO_heading.style.color = "white";
+        CEO_heading.style.fontSize = "50px";
+        CEO_des.innerHTML =
+          "Current Manging Director hired in june of 2016 as the Personal assistant  of the company founder Barney Calhoun"
+          + "<br>After Quickly rising Through the ranks of the company At the behest of the Calhoun family "
+          + "<br> She Became the first female Manging Director of First Class Interiors LLC Inc. in 2017."
+          + "<br> Born 1995 In Sigourney Iowa she has a Master's in business from Harvard, "
+          + "<br> she moved to New Zealand in 2015.";
+        CEO_img.src = "/Images/MD.jpg"
+        CEO_btn.innerHTML = "Change to CEO";
+      }
+      else {
+        CEO_heading.innerHTML = "CEO Mrs Carroll Calhoun";
+        CEO_heading.style.color = "white";
+        CEO_heading.style.fontSize = "50px";
+        CEO_des.innerHTML =
+          "<b>Current Ceo and the daughter of the company founder Barney Calhoun"
+          + "<br>Born 2002 in North shore Hospital, she has a Master's in business from yale"
+          + "<br> and is the first female Ceo of First Class Interiors LLC Inc. "
+          + "<br> She Became Ceo of First Class Interiors LLC Inc in August of 2020<b>";
+        CEO_img.src = "/Images/CEO.jpeg";
+        CEO_btn.innerHTML = "Change to MD"
+      }
+    }
+    function hideStaff1() {
+      var staff = document.getElementById('staff1');
+      staff.style.visibility = "hidden";
+    }
+    function showButton1() {
+      button1.style.visibility = "visible";
+    }
+    function hideButton1() {
+      button1.style.visibility = "hidden";
+    }
+    function hideStaff(){document.getElementById("ceo").style.visibility = "hidden";}
+
+
+
+
+  </script>
+</head>
+
+<body>
+  <div id="headerDiv"><object type="text/html" data="header.html"
+      style="overflow:auto; width: 100%; height: 100%;"></object></div>
+  <div id="navDiv"><object type="text/html" data="Navbar.html"
+      style="overflow:visible; width: 100%; height: 100%;"></object></div>
+  <div class="container-fluid mt-3 text-center ">
+    <h1>About us</h1>
+    <div class="row align-items-center" id="ceo">
+      <div class="col p-3 bg-dark text-white">
+        <img id="CEOimg" class="img-fluid" src="/Images/CEO.jpeg" alt="" id="ceo">
+        <button type="button" id="staffimg" onclick="hideStaff()"class="btn  fw-bold">Hide</button>
+      </div>
+      <div class="col p-3 bg-primary text-white" id="ceo">
+        <h1 id="CEO_HD">CEO Mrs Carroll Calhoun</h1>
+        <p id="CEO_DES">
+          <b>current ceo and the daughter of the company founder the Magnanimous Barney Calhoun
+            <br>Born 2002 in North shore Hospital, she has a Master's in business from yale
+            <br> She Became Ceo of First Class Interiors LLC Inc in August of 2020<b>
+        </p>
+        <button id="CEO_BTN" class="btn btn-primary" type="button" onclick="changeMD()">Change to MD</button>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col p-3 bg-dark text-white"><img src="/Images/E1.jpeg" alt=""></div>
+      <div class="col p-3 bg-primary text-white ">
+        <H1>Brittany Wallace</H1>
+        <p>
+          <b> Born 1987 in nelson Hospital
+            <br> Interior designer hired in 2014
+            <br>Engineering degree from Aut</b>
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col p-3 bg-dark text-white"><img src="/Images/E2.jpeg" alt=""></div>
+      <div class="col p-3 bg-primary text-white">
+        <h1>Elinor Lutz</h1>
+        <p>
+          <b>Born 1997 in Christchurch Hospital
+            <br>Interior designer hired in 2019
+            <br>Engineering degree from MIT</b>
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col p-3 bg-dark text-white"><img src="/Images/E3.jpeg" alt=""></div>
+      <div class="col p-3 bg-primary text-white">
+        <h1>Jeff Sheppard</h1>
+        <p>
+          <b>Born 1988 in North shore Hospital
+            <br>Architect hired in 2000
+            <br>Engineering degree from UA</b>
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col p-3 bg-dark text-white"><img src="/Images/E4.jpeg" alt=""></div>
+      <div class="col p-3 bg-primary text-white">
+        <h1>James Stokes</h1>
+        <p>
+          <b>Born 1972 in wellington Hospital
+            <br> Advertising specialist hired in 2004
+            <br> Business degee from AUT</b>
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col p-3 bg-dark text-white"><img src="/Images/E5.jpeg" alt=""></div>
+      <div class="col p-3 bg-primary text-white">
+        <h1>Norbert Weiss</h1>
+        <p>
+          <b>Born 1971 in Hamilton Hospital
+            <br> Lawyer hired in 1994
+            <br> Law degree from UA</b>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="footerDiv"><object type="text/html" data="footer.html"
+      style="overflow:auto; width: 100%; height: 100%"></object></div>
+  <!--  -->
+
+
+
+</body>
+
+</html>
